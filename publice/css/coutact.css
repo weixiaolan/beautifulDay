@@ -1,0 +1,331 @@
+#main{
+	width: 100%;
+	
+}
+#main .banner{
+	height: 400px;
+	width: 100%;
+	background: url(../image/banner.jpg) no-repeat ;
+	background-size: 100% 1000px;
+	background-position:bottom ;
+	position: relative;
+}
+#main .banner>div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-align: left;
+}
+#main .banner>div>div.menu{
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+#main .banner>div>div.menu:before{
+	content: "";
+	display: table;
+}
+#main .banner>div>div.menu>h1{
+	font-size: 64px;
+	text-transform: uppercase;
+	margin-top: 80px;
+}
+#main .banner>div>div.menu>p{
+	font-size: 32px;
+}
+#main .banner>div>div.menu>div.column{
+	position: absolute;
+	bottom: -40px;
+	width: 100%;
+	
+}
+#main .banner>div>div.menu>div.column>div{
+	width: 1100px;
+	margin: 0 auto;
+	
+}
+div.column>div>ul{
+	display: flex;
+}
+div.column>div>ul li a{
+	display: block;
+	color: #fff;
+	padding:30px 157px;
+	background: #2199ff;
+}
+div.column>div>ul li a.active{
+	background: #fff;
+	color: #333;
+}
+div.menu_item{
+	width: 1100px;
+	margin: 120px auto 0;
+	background: #fff;
+}
+/* 联系我们 */
+div.menu_item div.lxwm{
+	display: flex;
+	justify-content: space-between;
+	padding: 35px 0 35px 45px;
+}
+div.menu_item div.lxwm div.img{
+	width: 650px;
+	height: 500px;
+	border: 1px solid #000;
+}
+div.menu_item div.lxwm div.text{
+	font-size: 1.1em;
+}
+div.menu_item div.lxwm div.text p.title{
+	font-size: 32px;
+	color: #2199ff;
+}
+div.menu_item div.lxwm div.text p{
+	margin-top: 30px;
+}
+div.menu_item div.lxwm div.text p.title~p:before{
+	content: "";
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+div.menu_item div.lxwm div.text p.tel:before{
+	background-image: url(../image/icon/tel.svg);
+}
+div.menu_item div.lxwm div.text p.adress:before{
+	background-image: url(../image/icon/adress.svg);
+}
+div.menu_item div.lxwm div.text p.ZipCode:before{
+	background-image: url(../image/icon/zipcode.svg);
+}
+div.menu_item div.lxwm div.text p.metro:before{
+	background-image: url(../image/icon/metro.svg);
+}
+div.menu_item div.lxwm div.text p.Bus:before{
+	background-image: url(../image/icon/bus.svg);
+}
+
+/* 留言板 */
+div.menu_item div.MessageBoard{
+	padding: 30px 40px;
+}
+div.menu_item div.MessageBoard h6{
+	text-align: center;
+	margin-bottom: 30px;
+	color: #2199FF;
+}
+div.menu_item div.MessageBoard h6 span:before,
+div.menu_item div.MessageBoard h6 span:after{
+	content: "";
+	display: inline-block;
+	width: 200px;
+	height: 2px;
+	background: #efefef;
+	vertical-align: middle;
+}
+div.menu_item div.MessageBoard h6 span:before{
+	margin-right: 20px;
+}
+div.menu_item div.MessageBoard h6 span:after{
+	margin-left: 20px;
+}
+div.menu_item div.MessageBoard div.company{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+div.menu_item div.MessageBoard div.company div.company-item{
+	height: 50px;
+	border: 1px solid #000;
+	width: 100%;
+}
+div.menu_item div.MessageBoard div.textarea{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-bottom: 35px;
+}
+div.menu_item div.MessageBoard div.textarea p{
+	padding-right: 25px;
+	width: 100%;
+	text-align: right;
+	margin-top: 30px;
+}
+div.menu_item div.MessageBoard div.textarea p textarea,
+div.menu_item div.MessageBoard div.textarea p input{
+	width: 800px;
+	height: 45px;
+	margin-left: 20px;
+	font-size: 18px;
+	color: #666;
+	padding-left: 15px;
+}
+div.menu_item div.MessageBoard div.textarea p textarea:focus,
+div.menu_item div.MessageBoard div.textarea p input:focus{
+	outline: 0;
+}
+div.menu_item div.MessageBoard div.textarea p textarea{
+	height: 200px;
+	resize: none;
+}
+div.menu_item div.MessageBoard div.textarea p.msg span{
+	display: block;
+	float: right;
+}
+div.menu_item div.MessageBoard div.textarea p.qrtj{
+	text-align: center;
+}
+div.menu_item div.MessageBoard div.textarea p.qrtj a{
+	padding: 10px 35px;
+	background: #2199FF;
+	color: #fff;
+	border-radius: 5px;
+}
+/* 人才招聘 */
+div.recruit{
+	padding: 30px 40px;
+}
+div.recruit div.choosedep{
+	display: flex;
+	justify-content: space-between;
+}
+div.recruit div.choosedep div{
+	box-sizing: border-box;
+}
+/* 招聘部门 */
+div.zpbm-g{
+	width: 300px;
+	height: 50px;
+}
+div.recruit div.choosedep div.zpbm-g div{
+	width: 50%;
+	height: 100%;
+	float: left;
+	
+}
+div.recruit div.choosedep div.ckzp a,
+div.recruit div.choosedep div.zpbm-g div.zp{
+	background: #2199FF;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+}
+div.recruit div.choosedep div.zpbm-g select{
+	width: 100%;
+	height: 100%;
+	border-color: #cdcdcd;
+	outline: 0;
+	padding-left: 10px;
+}
+div.recruit div.choosedep div.zpbm-g select:focus{
+	outline: 0;
+}
+/* 查看招聘 */
+div.recruit div.choosedep div.ckzp a{
+	width: 150px;
+	display: block;
+}
+div.recruit div.choosedep div.ckzp img{
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-right: 5px;
+}
+/* 岗位职责 */
+div.recruit div.gwze{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+div.recruit div.gwze>div{
+	width: 50%;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+div.recruit div.gwze>div>div.ze-item{
+	height: 100%;
+	width: 80%;
+}
+/* 公司简介 */
+div.Companyprofile{
+	width: 100%;
+	background: #f2f2f2;
+	padding: 30px 40px;
+	display: flex;
+	justify-content: space-around;
+	color: #666666;
+	font-size: 16px;
+	margin-top: 20px;
+}
+div.Companyprofile>div{
+	padding: 0 5px;
+	width: 30%;
+}
+div.Companyprofile>div p{
+	text-indent: 2em;
+	line-height: 30px;
+}
+div.Companyprofile>div h4{
+	width: 120px;
+	padding: 10px 0;
+	background: #2199FF;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+div.Companyprofile>div ul li{
+	margin-top: 5px;
+}
+div.Companyprofile>div ul li:before{
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../image/icon/play_fill.svg);
+	margin-right: 5px;
+	margin-top: -5px;
+	vertical-align: middle;
+}
+/* 投递简历 */
+div.ttjl{
+	border-top: 1px solid #aaa;
+	background: #f2f2f2;
+	padding: 50px 40px;
+	text-align: center;
+}
+div.ttjl:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+div.ttjl a{
+	padding: 20px 30px;
+	background: #2199FF;
+	color: #fff;
+	font-size: 20px;
+	float: left;
+}
+div.ttjl a:after{
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../image/icon/daohang_o.svg);
+	vertical-align: middle;
+	margin-top: -7px;
+}
+div.ttjl span{
+	color: #2199FF;
+	font-size: 18px;
+	line-height: 70px;
+	margin-right: 60px;
+}
+div.MessageBoard,
+div.recruit{
+	display: none;
+}

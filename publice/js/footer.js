@@ -1,0 +1,9 @@
+$(function(){
+	$.ajax({
+		type:"get",
+		url:"http://127.0.0.1:3000/footer.html",
+		success:function(res){
+			$("#footer-my").replaceWith(res)
+		}
+	})
+})

@@ -1,0 +1,17 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	font:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	background: #f2f2f2;
+	color: #222;
+}
+ul{
+	list-style: none;
+}
+.mt-30{
+	margin-top: 30px;
+}

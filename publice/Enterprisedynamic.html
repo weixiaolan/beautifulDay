@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/123.css"/>
+		<link rel="stylesheet" href="css/animation.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/animation.css">
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body   style="min-width:1200px">
+	<!-- <iframe src="header.html" frameborder="0" style="width: 100%"></iframe> -->
+	<div id="header-my"></div>
+	<div>
+		<div>
+			<div id="banner-top">
+				<div style="display: block;"><h1>NEWS</h1>企业新闻</div>
+				<div style="display:none;"><h1>VIDEO</h1>企业视频</div>
+				<div style="display: none;"><h1>NOTION</h1>企业公告</div>
+			</div>
+			<div class="content">
+				<div class="tabs">
+					<a href="#" style="background: #fff;color:#000;">企业新闻 </a>
+					<a href="#">企业视频</a>
+					<a href="#">企业公告</a>
+				</div>
+				<script type="text/javascript">
+					$("div.tabs").on("click","a",function(e){
+						e.preventDefault();
+						var $a=$(this);
+						var i=$(".tabs a").index(this)
+						$a.css({background:"#fff",color:"#000"}).siblings().css({background:"",color:"#fff"});
+						// 第i+1个div
+						$(`div.content>div:eq(${i+1})`).css("display","block").siblings(":not(.tabs)").css("display","none")
+						$(`#banner-top>div:eq(${i})`).css("display","block").siblings().css("display","none");
+                        if(i==1){
+                            $(".content").css("height","1250px")
+                        }else if(i==2){
+                            $(".content").css("height","1600px")
+                        }else{
+                            $(".content").css("height","1000px")
+                        }
+					})
+				</script>
+				<div class="tab tab1 tab5">
+					<div class="tab1-top">
+						<div><img src="img/文件.png"/><p>关于"理想家园"假借我司平台进行违法交易的声明</p><span>2018-10-15</span></div>
+						<div><img src="img/文件.png"/><p>关于支付系云系统升级的公告</p><span>2018-10-12</span></div>
+						<div><img src="img/文件.png"/><p>关于支付云APP4.3.0版本更新的通知</p><span>2018-10-9</span></div>
+					</div>
+					<div class="tab1-mid">
+						<table cellspacing="0">
+							<tr>
+								<td><div>1</div></td>
+								<td>关于"理想家园"假借我司平台进行违法交易的声明</td>
+								<td>2018-10-15</td>
+							</tr>
+							<tr>
+								<td><div>2</div></td>
+								<td>关于支付云系统升级的广告</td>
+								<td>2018-10-12</td>
+							</tr>
+							<tr>
+								<td><div>3</div></td>
+								<td>关于支付云APPV4.3.0版本更新的通知</td>
+								<td>2018-10-9</td>
+							</tr>
+							<tr>
+								<td><div>4</div></td>
+								<td>支付云集团关于办第三节全球云粉节的决定通知</td>
+								<td>2018-9-30</td>
+							</tr>
+							<tr>
+								<td><div>5</div></td>
+								<td>温馨提示</td>
+								<td>2018-9-29</td>
+							</tr>
+							<tr>
+								<td><div>6</div></td>
+								<td>关于禁止会员虚假交易的公告</td>
+								<td>2018-9-20</td>
+							</tr>
+						</table>
+					</div>
+					<div class="tab1-bott">
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">下一页</a>
+						<a href="#">最后一页</a>
+					</div>
+				</div>
+				<div class="tab tab2">
+					<div class="tab2-top">
+						<img src="img/u=2781255138,4209464977&fm=26&gp=0.jpg"/>
+						<div class="ku"></div>
+						<div class="ku2">内容概况</div>
+					</div>
+					<div class="tab2-mid1"></div>
+					<div class="tab2-mid2">
+						<dl>
+							<dt>全部</dt>
+							<dd>宣传视频</dd>
+							<dd>采访视频</dd>
+							<dd>媒体视频</dd>
+						</dl>
+					</div>
+					<div class="tab2-mid3">
+						<div><img src="img/timg.jpg"/><p>支付云3周年庆祝</p><p>2015-9-25</p></div>
+						<div><img src="img/timg.jpg"/><p>新华网采访张军辉谈企业品牌建设</p><p>2018-7-9</p></div>
+						<div><img src="img/timg.jpg"/><p>新华网专访黄秋锦董事长:中国消费资本...</p><p>2018-5-27</p></div>
+						<div><img src="img/timg (3).jpg"/><p>云商保宣传片</p><p>2018-5-20</p></div>
+						<div><img src="img/timg (3).jpg"/><p>亚洲品牌盛典采访总裁</p><p>2018-7-6</p></div>
+						<div><img src="img/timg (3).jpg"/><p>浪漫的2.0</p><p>2018-7-6</p></div>
+					</div>
+					<div class="tab1-bott mid4">
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">下一页</a>
+					</div>
+				</div>
+				<div class="tab tab3">
+					 <div class="tab3-top">
+						 <div class="img">
+							<img src="img/1539763409551740.jpg"/>
+						 </div>
+						 <div class="ku"></div>
+						<div class="ku2">新闻头条</div>
+						<div class="ku3">
+							<h2>第三届全球云粉节圆满成功&nbsp;支付云一团与新海健康产业集团达成战略合作共识</h2><br />
+							2018.10 <br /><br />
+							<hr /> <br />
+							<p>2018年10月16日,由支付云集团主办的第三届全球云粉节在澳门盛大举行.云粉节期间支付云集团总裁张军辉先生与新海健康产业纪元保湿超先生在会上共同发布了两大结怨达成战略集团的合作的重大小心,并在现场对双方的合作进行了阐述.</p>
+						</div>
+
+					 </div>
+					 <div class="tab3-mid">
+						<div class="left"><div><img src="img/1539687862748934.png" alt="" /></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore veritatis sequi rem reprehenderit provident. Deleniti sed in porro sint voluptas aliquam repellat reprehenderit qui quas nisi reiciendis modi saepe ipsa?</p><span>2018-12-6</span></div>
+						<div class="left top"><div><img src="img/1539942616188230.jpg"/></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae non similique animi quis facere quod autem. Quaerat possimus ipsa quos earum iste voluptate itaque quibusdam animi commodi nobis neque repellat.</p><span>2016-15-32</span></div>
+						<div class="left"><div><img src="img/1539942815812935.jpg"/></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi totam sit necessitatibus possimus assumenda soluta facere ducimus recusandae minima delectus. Est ipsa animi temporibus deserunt natus expedita id sint perferendis!</p><span>2013-52-0</span></div>
+						<div class="top"><div><img src="img/1539942887596604.jpg"/></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam officia hic nisi repellendus accusantium omnis molestias accusamus minima eos corrupti architecto magni fugit culpa illum suscipit. Quidem suscipit sit magnam.</p><span>2556-44-45</span></div>
+						<div class="left"><div><img src="img/1539952611146252.png"/></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel unde a aspernatur veritatis ex harum libero assumenda reiciendis atque quo accusantium impedit tenetur consequuntur? Modi deserunt vero sapiente soluta reiciendis.</p><span>2016-12-33</span></div>
+						<div class="left top"><div><img src="img/timg (1).jpg"/></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum itaque adipisci doloremque unde accusantium distinctio deserunt libero reiciendis odit omnis necessitatibus enim tempora molestiae quisquam cumque. Quod ab rerum numquam?</p><span>2015-4-9</span></div>
+						<div class="left"><div><img src="img/u=2781255138,4209464977&fm=26&gp=0.jpg"/></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit placeat fugiat quisquam cupiditate et quaerat necessitatibus dolorum suscipit magnam qui hic maiores ullam harum esse mollitia praesentium natus. Eos ipsam.</p><span>2019-8-8</span></div>
+						<div class="top"><div><img src="img/1539942616188230.jpg"/></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam blanditiis minus dignissimos. Aspernatur incidunt voluptates in expedita adipisci doloremque quos. Sit inventore quaerat quos atque sequi eum facere omnis qui.</p><span>1945-8-15</span></div>
+					 </div>
+					 <div class="tab1-bott mid4">
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">下一页</a>
+						<a href="#">最后一页</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- <iframe src="footer.html" frameborder="0" width="100%" height="401px"></iframe> -->
+	</div>
+
+	<div id="footer-my"></div>
+	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

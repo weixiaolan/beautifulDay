@@ -1,0 +1,84 @@
+body{
+	font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: url(../img/timg.png) no-repeat;
+	background-size: cover;
+	background-attachment:fixed ;
+}
+/*登录*/
+#login{
+	width: 700px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 250px;
+	position: relative;
+}
+#login input{
+	width: 600px;
+	height: 80px;
+	border-radius: 25px;
+	display: block;
+	margin: 0px auto;
+	border: 1px solid white;
+	background: transparent;
+	font-size: 2rem;
+	outline:none;
+}
+
+#login input::-webkit-input-placeholder{
+	color: #ffffff;
+}
+#login input:nth-child(1),#login input:nth-child(3){
+	width: 450px;
+	padding-left: 150px;
+	color: #ffffff;
+}
+#login input:last-child{
+	background-color: #ffffff;
+	color: #6d7aa6;
+}
+#login>img:nth-child(1){
+	width: 50px;
+	position: absolute;
+	top: 15px;
+	left: 90px;
+}
+#login>img:nth-child(2){
+	width: 50px;
+	position: absolute;
+	top: 155px;
+	left: 90px;
+}
+#login>p:nth-child(4){
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 20px;
+}
+#login>p:nth-child(4)>span{
+	margin-right: 30px;
+	color: white;
+}
+#login>p:nth-child(4)>a{
+	color: #3d70c1;
+}
+#login>form>p{
+	height: 60px;
+	margin-left: 70px;
+}
+#login>form>p>span{
+	color: red;
+	font-size: 1.5rem;
+	line-height: 60px;
+}

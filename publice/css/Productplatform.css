@@ -1,0 +1,117 @@
+#main{
+	width: 100%;
+	min-width: 1100px;
+}
+#main .banner{
+	height: 400px;
+	width: 100%;
+	
+	background: url(../image/LOCAL201510301706031954247879011.jpg) no-repeat ;
+	background-size: cover;
+	background-position:bottom ;
+	position: relative;
+}
+#main .banner>div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	color: #fff;
+	text-align: center;
+}
+#main .banner>div>h1{
+	font-size: 64px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 80px;
+}
+#main .banner>div>p{
+	font-size: 32px;
+}
+#main .banner>div>div.column{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#main .banner>div>div.column>div{
+	width: 1100px;
+	margin: 0 auto;
+	
+}
+div.column>div>ul{
+	display: flex;
+	justify-content: space-between;
+}
+div.column>div>ul li a{
+	display: block;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding:0 20px;
+}
+div.column>div>ul li a.active{
+	background: #2199ff;
+}
+div.column>div>ul li a img{
+	vertical-align: middle;
+}
+/*大图下边的内容*/
+div.summary{
+	width: 1100px;
+	margin: 100px auto 0;
+}
+div.summary>div.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+div.summary>div.nav>a{
+	background: #2199ff;
+	width: 45px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+div.summary>div.nav>a img{
+	vertical-align: middle;
+}
+div.summary>div.nav>div{
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+}
+div.summary>div.nav>div div.Navimg,
+div.summary>div.nav>div div.Navtext{padding: 20px;}
+div.summary>div.nav>div div.Navimg>img{
+	width: 450px;
+}
+div.summary>div.nav>div.yfg,
+div.summary>div.nav>div.aty{
+	display: none;
+}
+div.summary>div.nav>div div.Navtext h4{
+	font-size: 1.3em;
+	font-weight: 700;
+}
+div.summary>div.nav>div div.Navtext h4+p{
+	margin-top: 20px;
+	line-height: 25px;
+}
+div.summary>div.nav>div div.Navtext p.tel{
+	margin-top: 35px;
+}
+div.summary>div.asp{
+	margin-top: 100px;
+}
+div.summary>div.asp p.title{
+	color: #2199ff;
+	font-size: 1.3em;
+}
+div.summary>div.asp p.title+p{
+	margin-top: 30px;
+	line-height: 30px;
+}
+
+

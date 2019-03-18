@@ -1,0 +1,84 @@
+/*公共*/
+body{
+	font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*头部最上面的登录接口*/
+#header1{
+	background-color: #404040;
+	width: 100%;
+	min-width: 1100px;
+	height: 30px;
+}
+#header1>div{
+	width: 1100px;
+	height: 30px;
+	margin: 0 auto;
+}
+#header1>div>ul>li>img{
+	margin-top: 5px;
+}
+#header1>div>ul{
+	display: flex;
+	justify-content: flex-end;
+}
+#header1>div>ul>li{
+	margin: 0 20px;
+	color: white;
+	line-height: 30px;
+}
+#header1>div>ul>li>a{
+	color: white;
+	font-size: .9rem;
+}
+#header1>div>ul>li:nth-child(1),#header1>div>ul>li:nth-child(4){
+	margin-right: -10px;
+}
+/*头部的大导航*/
+#header_banner{
+	width: 100%;
+	height: 80px;
+}
+#header_banner>div{
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+#header_banner>div>ul>li{
+	float: left;
+	margin-left: 60px;
+}
+#header_banner>div>ul>li:first-child{
+	margin-left: 80px;
+}
+#header_banner>div>ul>li>a{
+	color: #4c4c4c;
+	font-size: 1rem;
+}
+#header_banner>div>div{
+	margin-left: 80px;
+}
+#header_banner>div>div>input{
+	border-radius: 25px;
+	border: 1px solid #cdcdcd;
+	width: 220px;
+	padding-left: 20px;
+	height: 30px;
+	outline:none;
+}
+#header_banner>div>div>a>img{
+	position: relative;
+	left: -30px;
+	top: 3px;
+}
